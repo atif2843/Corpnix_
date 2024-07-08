@@ -1,7 +1,7 @@
 {
-  "name": "responsive-halloween-website",
+  "name": "MMBI",
   "version": "1.0.0",
-  "description": "- Responsive Halloween Website Using HTML, CSS & JavaScript.\r - Contains animations when scrolling.\r - It has three color designs (green, red and black)\r - Smooth scrolling in each section.\r - Developed first with the Mobile First methodology, then for desktop.\r - Compatible with all mobile devices and with a beautiful and pleasant user interface.",
+  "description": "- Loan Providing Company",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass assets/scss/styles.scss assets/css/styles.css"

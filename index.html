@@ -9,13 +9,17 @@
 
         <!--=============== BOXICONS ===============-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        
+        
+        <!--=============== UIKIT ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/css/uikit.min.css" />
 
         <!--=============== SWIPER CSS ===============--> 
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
         <!--=============== CSS ===============--> 
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/scss/styles.css">
         <script src="https://kit.fontawesome.com/ae45a68bcd.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -26,8 +30,8 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <img src="assets/Img_1/service card/logo_red.svg" alt="" class="nav__logo-img">
-                    Corpnix
+                    <img src="assets/Img_1/service card/logo_red.svg" alt="asdasdasdasda" class="nav__logo-img">
+                    MMBI
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
@@ -41,14 +45,36 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#trick" class="nav__link">Portfolio</a>
+                            <a href="#trick" class="nav__link" type="button">Personal Loan <i class="fa-solid fa-angle-down"></i></a>
+                            <div uk-dropdown="pos: bottom-center; delay-hide:200; mode:click,hover; animate-out:true; animation: slide-top; duration: 700">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-active uk-margin-auto-bottom"><a href="#">Interest Rate</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="uk-active"><a href="#">Document Required</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="uk-active"><a href="#">Eligibilty Criteria</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="uk-active"><a href="#">How to Apply</a></li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#new" class="nav__link">Services</a>
+                            <a href="#new" class="nav__link" type="button">EMI Calculator <i class="fa-solid fa-angle-down"></i></a>
+                            <div uk-dropdown="pos: bottom-center; delay-hide:200; mode:click,hover; animate-out:true; animation: slide-top; duration: 700">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-active uk-margin-auto-bottom"><a href="#">Home Loan</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="uk-active"><a href="#">Business Loan</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="uk-active"><a href="#">Education Loan</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="uk-active"><a href="#">Personal Loan</a></li>
+                                </ul>
+                            </div>
                         </li>
 
-                        <a href="tel:+919821481799" class="button button--ghost">Contact</a>
+                        <a href="tel:+919821481799" class="button button--orange">Apply Now</a>
                     </ul>
 
                     <div class="nav__close" id="nav-close">
@@ -69,66 +95,30 @@
             <!--==================== HOME ====================-->
             <section class="home" id="home">
                 <div class="swiper home-swiper">
-                    <div class="swiper-wrapper">
+                    <div> <!--class="swiper-wrapper"-->
                         <!-- HOME SLIDER 1 -->
                         <section class="swiper-slide">
                             <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/Img_1/DM.svg" alt="" class="home__img">
-                                    <!-- <div class="home__indicator"></div> -->
-    
-                                    <!-- <div class="home__details-img">
-                                        <h4 class="home__details-title">Discover Custom Corrugated Boxes</h4>
-                                        <span class="home__details-subtitle">Reliable Packaging Solutions for Every Need!</span>
-                                    </div> -->
-                                </div>
-    
                                 <div class="home__data">
-                                    <h1 class="home__title">DIGITAL <br> MARKETING</h1>
-                                    <p class="home__description">Gain online success with our strategic digital marketing. Enhance your online visibility, captivate your target audience, and achieve tangible results.
+                                    <h1 class="home__title">Have and Idea? <br> We made Reality</h1>
+                                    <p class="home__description">Corpnix Your IT Solutions Partner. With innovation at our core, we transform ideas into impactful solutions. Let's craft your digital success story together.
                                     </p>
+                                    <ul>
+                                        <li class="home__lists"><span class="home__activebullet"><i class="fa-solid fa-check"></i></span> Have an idea contact us</li>
+                                        <li class="home__lists"><span class="home__hbullet">2</span>We develop fast, perfect Responsive websites</li>
+                                        <li class="home__lists"><span class="home__hbullet">3</span>We design intuitive web & mobile apps</li>
+                                    </ul>
                                     <div class="home__buttons">
-                                        <a href="#" class="button">Know More</a>
+                                        <a href="#" class="button button--orange">Apply Now</a>
+                                        <a href="#" class="button button--green">Track Status <i class="fa-solid fa-angles-down"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
 
-                        <!-- HOME SLIDER 2 -->
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
                                 <div class="home__group">
-                                    <img src="assets/Img_1/lms.svg" alt="" class="home__img">
+                                    <img src="assets/img/hero.png" alt="" class="home__img">
                                 </div>
-    
-                                <div class="home__data">
-                                    <h1 class="home__title">LEARNING <br> MANAGEMENT <br> SYSTEM</h1>
-                                    <p class="home__description">Streamline your eLearning program with our top-tier LMS tools and support.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Know More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- HOME SLIDER 3 -->
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/Img_1/webd.svg" alt="" class="home__img">
-                                </div>
-    
-                                <div class="home__data">
-                                    <h1 class="home__title">WEB <br> DEVELOPMENT</h1>
-                                    <p class="home__description">Unleashing the power of technology to create extraordinary online masterpieces that leave a lasting impression.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Know More</a>
-                                    </div>
-                                </div>
+                                
+                                
                             </div>
                         </section>
                     </div>
@@ -137,57 +127,108 @@
             </section>
             <!--==================== ABOUT ====================-->
             <section class="section about" id="about">
-                <div class="about__container container grid">
+                <div class="about__container custom_container grid">
                     <div class="about__data">
-                        <h2 class="section__title about__title">About Us</h2>
-                        <p class="about__description">Corpnix, established in 2018, is a technology company renowned for its commitment to quality and human-centric services. With a talented team, we excel in delivering exceptional digital solutions, creating visually stunning websites that offer seamless user experiences. Our expertise in search engine optimization ensures clients' websites achieve high visibility and prominence in search results. 
+                        <div><span class="about_icon bg-orange"><img src="./assets/img/award-icon.svg" alt=""></span></div>
+                        <h3 class="section__title about__title">Why us? Numbers that showcase our success</h3>
+                        <p class="about__description">Founded in 2018, Corpnix is your trusted tech partner. We're all about quality and user-centric services. Our talented team crafts visually stunning websites that offer seamless experiences. Plus, we're SEO pros, boosting your online visibility.
                         </p>
-                        <a href="#" class="button">Know more</a>
+                        <a href="#" class="button button--white">Know more</a>
                     </div>
 
-                    <img src="assets/Img_1/about.svg" alt="" class="about__img">
+                    <div class="about__data flex">
+                        <div class="flex about__card_container ">
+                            <div class="about__card bg-orange">
+                                <h3>200+</h3>
+                                <div>Website Build</div>
+                                <br>
+                                <div>Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+                            </div>
+                            <div class="about__card">
+                                <h3>34+</h3>
+                                <div>Team Member</div>
+                                <br>
+                                <div>Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+                            </div>
+                        </div>
+
+                        <div class="flex about__card_container">
+                            <div class="about__card">
+                                <h3>200+</h3>
+                                <div>Website Build</div>
+                                <br>
+                                <div>Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+                            </div>
+                            <div class="about__card">
+                                <h3>34+</h3>
+                                <div>Team Member</div>
+                                <br>
+                                <div>Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!--==================== CATEGORY ====================-->
             <section class="section category">
-                <h2 class="section__title">Services</h2>
-
-                <div class="category__container container grid">
-                    <div class="category__data">
-                        <img src="assets/Img_1/service card/web.svg" alt="" class="category__img">
-                        <h3 class="category__title">Web Development</h3>
-                        <p class="category__description">You look at the scariest pumpkins there is.</p>
+                <div class="swiper category-swiper">
+                    <h2 class="section__title">What We Do?</h2>
+                    <p>Explore our range of offerings, from web development to digital
+                        marketing. We're here to fuel your digital success.
+                    </p>
+                    <div class="swipper_button_wrpper">
+                        <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                        <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
                     </div>
-
-                    <div class="category__data">
-                        <img src="assets/Img_1/service card/lms.svg" alt="" class="category__img">
-                        <h3 class="category__title">Learning Management System</h3>
-                        <p class="category__description">Pick the most stylish witch hats out there.</p>
-                    </div>
-                    <div class="category__data">
-                        <img src="assets/Img_1/service card/content.svg" alt="" class="category__img">
-                        <h3 class="category__title">Content Writing</h3>
-                        <p class="category__description">Pick the most stylish witch hats out there.</p>
-                    </div>
-                    <div class="category__data">
-                        <img src="assets/Img_1/service card/SEO.svg" alt="" class="category__img">
-                        <h3 class="category__title">Search Engine Optimization</h3>
-                        <p class="category__description">Pick the most stylish witch hats out there.</p>
-                    </div>
-                    <div class="category__data">
-                        <img src="assets/Img_1/service card/SMM.svg" alt="" class="category__img">
-                        <h3 class="category__title">Social Media Marketing</h3>
-                        <p class="category__description">Pick the most stylish witch hats out there.</p>
-                    </div>
-                    <div class="category__data">
-                        <img src="assets/Img_1/service card/email.svg" alt="" class="category__img">
-                        <h3 class="category__title">Email Marketing</h3>
-                        <p class="category__description">Pick the most stylish witch hats out there.</p>
-                    </div>
-                    <div class="category__data">
-                        <img src="assets/Img_1/service card/epub.svg" alt="" class="category__img">
-                        <h3 class="category__title">Digital Publishing</h3>
-                        <p class="category__description">Pick the most stylish witch hats out there.</p>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                            <div class="new__content swiper-slide">
+                                <div class="category__data--content">
+                                    <div class="category__abs"><span class="service_icon epub"><img src="./assets/img/icons/epub.svg" alt=""></span></div>
+                                    <h4 class="category__title">E Book-1 Publishing</h4>
+                                    <p class="category__description">We provide end-to-end epub
+                                        solutions that enable you to convert your content into a digital format for easy distribution and accessibility...</p>
+                                    <div class="category__buttons"><a href="#" class="button button--white">Read More</a></div>
+                                </div>
+                            </div>
+                            <div class="new__content swiper-slide">
+                                <div class="category__data--content">
+                                    <div class="category__abs"><span class="service_icon devlop"><img src="./assets/img/icons/dev.svg" alt=""></span></div>
+                                    <h4 class="category__title">E Book-1 Publishing</h4>
+                                    <p class="category__description">We provide end-to-end epub
+                                        solutions that enable you to convert your content into a digital format for easy distribution and accessibility...</p>
+                                    <div class="category__buttons"><a href="#" class="button button--white">Read More</a></div>
+                                </div>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <div class="category__data--content">
+                                    <div class="category__abs"><span class="service_icon email"><img src="./assets/img/icons/email.svg" alt=""></span></div>
+                                    <h4 class="category__title">E Book-1 Publishing</h4>
+                                    <p class="category__description">We provide end-to-end epub
+                                        solutions that enable you to convert your content into a digital format for easy distribution and accessibility...</p>
+                                    <div class="category__buttons"><a href="#" class="button button--white">Read More</a></div>
+                                </div>
+                            </div>
+                            <div class="new__content swiper-slide">
+                                <div class="category__data--content">
+                                    <div class="category__abs"><span class="service_icon DM"><img src="./assets/img/icons/DM.svg" alt=""></span></div>
+                                    <h4 class="category__title">E Book-1 Publishing</h4>
+                                    <p class="category__description">We provide end-to-end epub
+                                        solutions that enable you to convert your content into a digital format for easy distribution and accessibility...</p>
+                                    <div class="category__buttons"><a href="#" class="button button--white">Read More</a></div>
+                                </div>
+                            </div>
+        
+                            <div class="new__content swiper-slide">
+                                <div class="category__data--content">
+                                    <div class="category__abs"><span class="service_icon lms"><img src="./assets/img/icons/lms.svg" alt=""></span></div>
+                                    <h4 class="category__title">E Book-1 Publishing</h4>
+                                    <p class="category__description">We provide end-to-end epub
+                                        solutions that enable you to convert your content into a digital format for easy distribution and accessibility...</p>
+                                    <div class="category__buttons"><a href="#" class="button button--white">Read More</a></div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </section>
@@ -634,9 +675,15 @@
         <script src="assets/js/scrollreveal.min.js"></script>
 
         <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<script src="assets/js/swiper-bundle.min.js"></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+
+        <!--=============== UIKIT JS ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
     </body>
 </html>

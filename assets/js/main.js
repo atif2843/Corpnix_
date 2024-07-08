@@ -30,16 +30,35 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== HOME SWIPER ===============*/
-let homeSwiper = new Swiper(".home-swiper", {
+
+let categorySwiper = new Swiper(".category-swiper", {
+    slidesPerView: 4,
     spaceBetween: 30,
-    loop: 'true',
-    
+    loop:true,
+    fade: 'true',
+    grabCursor: 'true',
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-})
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 4,
+        },
+    },
+});
 let prodSwiper = new Swiper(".prod-swiper", {
+    slidesPerView: 3,
     spaceBetween: 30,
     loop: 'true',
     autoplay: {
@@ -62,14 +81,20 @@ window.addEventListener('scroll', scrollHeader)
 
 /*=============== NEW SWIPER ===============*/
 let newSwiper = new Swiper(".new-swiper", {
-    autoplay: {
-        delay: 500,
-        disableOnInteraction:false,
-      },
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 5,
     loop: 'true',
-    spaceBetween: 16,
+    spaceBetween: 30,
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
 
     
 });

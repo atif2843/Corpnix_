@@ -17,15 +17,19 @@ body{
     color: var(--text-color);
 }
 h1,h2,h3,h4{
-    color: var(--title-color);
+    color: var(--text-color);
     font-weight: var(--font-semi-bold);
 }
 
 ul{
     list-style: none;
+    padding: 0 !important;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
+}
+a:hover{
+    color: #fff;
 }
 img{
     max-width: 100%;
